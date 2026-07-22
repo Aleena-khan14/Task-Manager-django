@@ -8,5 +8,12 @@
 <body>
     <h1>Welcome to Task Manager</h1>
     <p>This is the home page.</p>
+    
+    <h1>My tasks</h1>
+    <ul>
+    {%for task in tasks%}
+      <li>{{task}}</li>
+    {% endfor %}
+    </ul>
 </body>
 </html>
